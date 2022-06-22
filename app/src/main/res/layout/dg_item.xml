@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/ui"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/edit">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/edit"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/name_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/name_txt"
+                    android:hint="name" />
+
+                <TextView
+                    android:id="@+id/fname_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Father Name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/fname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fname_txt"
+                    android:textSize="15dp"
+                    android:hint="father name" />
+
+                <TextView
+                    android:id="@+id/sname_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fname_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Surname"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/sname_txt"
+                    android:hint="surname" />
+
+                <TextView
+                    android:id="@+id/mname_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sname_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Mother Name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mname_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/mname_txt"
+                    android:hint="mother name" />
+
+                <TextView
+                    android:id="@+id/mobile_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mname_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Mobile Number"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mobile_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/mobile_txt"
+                    android:hint="mobile number" />
+
+                <TextView
+                    android:id="@+id/mail_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobile_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="E-Mail"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mail_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/mail_txt"
+                    android:hint="mail" />
+
+                <TextView
+                    android:id="@+id/add_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mail_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/add_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/add_txt"
+                    android:hint="address" />
+
+                <TextView
+                    android:id="@+id/bdate_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/add_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Birth Date"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/bdate_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/bdate_txt"
+                    android:hint="birth date" />
+
+                <TextView
+                    android:id="@+id/age_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bdate_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Age"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/age_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/age_txt"
+                    android:hint="age" />
+
+                <TextView
+                    android:id="@+id/std_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/age_edt"
+                    android:layout_marginTop="5dp"
+                    android:text="Standard"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/std_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_below="@id/std_txt"
+                    android:hint="std" />
+
+                <Button
+                    android:id="@+id/save_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/std_edt"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/ui"
+                    android:text="save" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

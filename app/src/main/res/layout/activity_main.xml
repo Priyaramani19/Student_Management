@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".Screen.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/ui">
+
+        <RelativeLayout
+            android:id="@+id/menu_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_baseline_menu_24">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Student Management"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_toEndOf="@id/menu_img"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/carousel"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:autoPlay="true"
+        app:autoPlayDelay="3000"
+        android:layout_below="@id/menu"
+        app:infiniteCarousel="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/admission_cv"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ripple_effect"
+        android:layout_below="@id/carousel"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Admission"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stu_details_cv"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/carousel"
+        android:background="@drawable/ripple_effect"
+        android:layout_toEndOf="@id/admission_cv"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Student Details"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

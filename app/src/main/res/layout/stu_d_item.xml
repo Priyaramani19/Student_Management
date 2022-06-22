@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="7dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/stu_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/stu_id"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/stu_full_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/st_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Name   :"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/s_surname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@id/st_Name"
+                            android:text="surname"
+                            android:textColor="@color/black"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/s_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@id/s_surname"
+                            android:text="name"
+                            android:textColor="@color/black"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/s_fname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toEndOf="@id/s_name"
+                            android:text="fathername"
+                            android:textColor="@color/black"
+                            android:textSize="16dp">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/st_Std"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stu_full_name"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Std   :"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/s_std"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/stu_full_name"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@id/st_Std"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/delete_img"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@id/data"
+                android:src="@drawable/delete"
+                app:tint="#CD1B1B" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
