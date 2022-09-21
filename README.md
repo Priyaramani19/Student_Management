@@ -26,7 +26,7 @@ This application can make easy the process of Admissions of school. This applica
 - Easily maintain the data
 
 
-### User Side Screenshots
+### App Preview
 
 <p float="center">
   
