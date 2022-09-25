@@ -39,6 +39,9 @@ This application can make easy the process of Admissions of school. This applica
 <img src="https://user-images.githubusercontent.com/101577535/191528558-9a97b5da-1c14-4b12-8c6f-660b1bf5aef5.png" width=22% height=35%>
 
 </p>
+
+<br>
+
 ## Laungage, Libraries and tools 🛠
 
 1. Kotlin
